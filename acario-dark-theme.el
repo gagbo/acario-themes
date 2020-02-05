@@ -12,7 +12,7 @@
 ;; This theme is a WIP to try and play with emacs-doom-themer
 ;;; Code:
 
-(add-to-list load-path "emacs-doom-themer/")
+(push (expand-file-name (file-name-as-directory "emacs-doom-themer")) load-path)
 
 (eval-and-compile
   (require 'doom-themer-base))
